@@ -1,0 +1,27 @@
+:global(.main) {
+  width: 220px;
+  position:fixed;
+  left:0
+}
+:global(.leftNavContainer) {
+  height: 100vh;
+  display:flex;
+  flex-direction:column;
+  :global(.leftNavHeader){
+    padding: 18px;
+    font-size: 16px;
+    height: 76px;
+    img{
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 20px
+    }
+  }
+  :global(.leftNavBody) {
+    flex: 1 1 0;
+  }
+}
+.toggle{
+  height: 40px;
+}

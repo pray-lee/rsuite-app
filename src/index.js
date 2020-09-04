@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+
+// 国际化设置
+import {IntlProvider} from 'rsuite'
+import zhCN from 'rsuite/lib/IntlProvider/locales/zh_CN'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+    <IntlProvider locale={zhCN}>
+        <App/>
+    </IntlProvider>,
+document.getElementById('root')
+)
+;
