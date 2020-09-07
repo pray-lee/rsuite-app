@@ -1,6 +1,8 @@
 import addIcon from './add.svg'
+import editIcon from './editor.svg'
 import './icon.module.scss'
 
-export default {
-   addIcon
+export {
+   addIcon,
+   editIcon
 }

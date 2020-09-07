@@ -8,7 +8,7 @@ export default () => {
         <Header className="header">
             <div className={styled['header-left']}>
                 <img className={styled['header-logo']} src={logo} alt=""/>
-                <span>财咖</span>
+                <span>财咖智能ERP</span>
             </div>
         </Header>
     )
