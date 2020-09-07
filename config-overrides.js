@@ -1,4 +1,4 @@
-const {override, addLessLoader, addDecoratorsLegacy} = require('customize-cra')
+const {override, addLessLoader, addDecoratorsLegacy, addWebpackModuleRule} = require('customize-cra')
 const modifyVars = require('./theme')
 
 module.exports = override(
@@ -7,6 +7,15 @@ module.exports = override(
             javascriptEnabled: true,
             modifyVars
         }
+    }),
+    addWebpackModuleRule({
+        test: /\.svg$/,
+        use:[{
+            loader: 'svg-sprite-loader',
+            options: {
+                symbolId: 'icon-[name]'
+            }
+        }]
     }),
     addDecoratorsLegacy()
 )

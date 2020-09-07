@@ -1,0 +1,17 @@
+:global(.header) {
+  height: 56px;
+  padding: 0 18px;
+  display:flex;
+  align-items: center;
+  background:#3276c3;
+  .header-left{
+    display:flex;
+    align-items: center;
+    .header-logo{
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+    }
+  }
+}
+

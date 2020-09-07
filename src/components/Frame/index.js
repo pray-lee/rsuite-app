@@ -1,9 +1,18 @@
 import React from "react";
-import LeftNav from '../Nav/LeftNav'
+import {Container} from 'rsuite'
+import Sidebar from './Nav/LeftNav'
+import Header from './Header'
+import Content from './Content'
+import './index.module.scss'
+
 export default () => {
     return (
-        <>
-            <LeftNav />
-        </>
+        <Container>
+            <Header/>
+            <Container className="main">
+                <Sidebar/>
+                <Content/>
+            </Container>
+        </Container>
     )
 }
