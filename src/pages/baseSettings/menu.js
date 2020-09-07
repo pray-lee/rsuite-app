@@ -5,12 +5,12 @@ import {
     editIcon
 } from '../../components/Icons'
 import {useFetch} from "../../components/Frame/customHook/useFetch";
-import test from '../../api/test'
+import {test1, test2} from '../../api/test'
 
 export default () => {
-    const loading = useFetch(useCallback(() => test(), []))
+    const loading = useFetch(useCallback(() => test1(), []))
     console.log(loading, '///////////')
-    const loading1 = useFetch(useCallback(() => test(), []))
+    const loading1 = useFetch(useCallback(() => test2(), []))
     console.log(loading1, '.....')
     return (
         <div className="content">
