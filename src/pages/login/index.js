@@ -9,7 +9,6 @@ const model = Schema.Model({
     password: StringType().isRequired('请填写密码'),
     imageCode: StringType().isRequired('请填写图片验证码')
 })
-
 export default () => {
     return (
         <Form fluid className={styled.container} model={model}>
