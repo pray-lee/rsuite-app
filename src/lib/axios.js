@@ -18,7 +18,7 @@ class HttpRequest {
     //interceptors
     interceptors(instance) {
         instance.interceptors.request.use(config => {
-            // loading
+            // 设置token
             return config
         }, err => {
             Promise.reject(err)

@@ -1,7 +1,7 @@
 import http from '../lib'
 
 const test = () => http.request({
-    url: 'https://raw.githubusercontent.com/ag-grid/ag-grid/master/grid-packages/ag-grid-docs/src/olympicWinnersSmall.json'
+    url: 'oauth/token?grant_type=password&username=admin&password=123456&client_id=webClient&client_secret=web123456'
 })
 
 const test1 = () => {
